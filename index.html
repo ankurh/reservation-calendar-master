@@ -1,0 +1,36 @@
+<html ng-app = "myApp" >
+<head>
+<title>Reservation Calendar</title>
+</head>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" ><!-- load bootstrap for styling  -->
+    <script src="./src/main.js"></script>
+</head>
+
+<body ng-onInit="testFun()" ng-controller="reserveCalendar">
+<h1>Reservation Calendar</h1>
+
+<div class="row col-md-6">
+    <div class="col-md-6">
+        <p> Select Date of Stay </p>
+        <br>
+        <input type = "date" ng-model = "resCalendar" ng-change="setReservation()">
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-12">
+            <input type="text" ng-show="showBooking" ng-model="tenant" ng-disabled="disable"/>
+            <input type="button"  ng-show="showTenant"  ng-click="setupReservation()" value="Confirm Stay"/>
+            <input type="button" ng-show="showReserved" ng-click="setupReservation()" value="Cancel Stay"/>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
