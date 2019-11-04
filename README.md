@@ -24,4 +24,4 @@ npm start
 Once the server is running, you can start making requests to http://localhost:3000.
 
 
-Application will be up and running on the address http://localhost:3000.
+Application will be up and running on the address http://localhost:3000/index.html.
